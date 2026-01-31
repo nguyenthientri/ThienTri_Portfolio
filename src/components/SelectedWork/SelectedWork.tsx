@@ -1,19 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { forwardRef, useEffect, useRef } from 'react'
+import p1Image from 'src/assets/images/p1.png'
+import p2Image from 'src/assets/images/p2.png'
 import gsap from 'gsap'
 
 const projects = [
   {
     name: 'Shopify',
     type: 'Web Development',
-    image: '/src/assets/images/p1.png',
+    image: p1Image,
     link: 'https://my-ecommerce-webuy.vercel.app/'
   },
   {
     name: 'VietFlix',
     type: 'Web Development',
-    image: '/src/assets/images/p2.png',
+    image: p2Image,
     link: 'https://viet-flix-1-lsla.vercel.app/'
   }
 ]
