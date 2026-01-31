@@ -5,7 +5,7 @@ const skillsData = [
   {
     id: 1,
     title: 'Technical Skill',
-    icon: 'technical',
+    icon: 'technical' as const,
     sections: [
       {
         heading: 'Programing Language & Frameworks:',
@@ -24,7 +24,7 @@ const skillsData = [
   {
     id: 2,
     title: 'Soft Skill',
-    icon: 'softskill',
+    icon: 'softskill' as const,
     sections: [
       {
         heading: 'Languages I speak:',
@@ -43,7 +43,7 @@ const skillsData = [
   {
     id: 3,
     title: 'Language',
-    icon: 'language',
+    icon: 'language' as const,
     sections: [
       {
         heading: 'English',
@@ -53,7 +53,7 @@ const skillsData = [
   }
 ]
 
-const Skill = forwardRef((props, ref) => {
+const Skill = forwardRef<HTMLElement>((_, ref) => {
   return (
     <section ref={ref}>
       <div

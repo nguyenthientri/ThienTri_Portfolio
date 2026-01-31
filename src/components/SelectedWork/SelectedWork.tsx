@@ -18,7 +18,7 @@ const projects = [
   }
 ]
 
-const SelectedWork = forwardRef((props, ref) => {
+const SelectedWork = forwardRef<HTMLElement>((_, ref) => {
   const imageRef = useRef<HTMLImageElement>(null)
   const loaderRef = useRef<HTMLDivElement>(null)
   const loaderRotateTween = useRef<gsap.core.Tween | null>(null)

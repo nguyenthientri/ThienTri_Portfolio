@@ -1,4 +1,4 @@
-import { forwardRef, useRef } from 'react'
+import { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,12 +7,10 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 gsap.registerPlugin(useGSAP)
 
 type AboutMeProps = {
-  onLetsTalk: () => void
+  onLetsTalk?: () => void
 }
-const Banner = forwardRef<AboutMeProps>((props) => {
-  const { onLetsTalk } = props
-
-  const container = useRef<HTMLDivElement | null>(null)
+const Banner = ({ onLetsTalk }: AboutMeProps) => {
+  const container = useRef<HTMLDivElement>(null)
 
   useGSAP(
     () => {
@@ -94,5 +92,5 @@ const Banner = forwardRef<AboutMeProps>((props) => {
       </div>
     </>
   )
-})
+}
 export default Banner

@@ -10,7 +10,7 @@ const iconMap: Record<string, IconDefinition> = {
 interface Skill {
   id: number
   title: string
-  icon: 'designer' | 'frontend' | 'mentor'
+  icon: 'technical' | 'softskill' | 'language'
   sections: SkillSection[]
 }
 

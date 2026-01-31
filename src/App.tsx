@@ -11,13 +11,13 @@ import gsap from 'gsap'
 import ScrollToPlugin from 'gsap/ScrollToPlugin'
 
 function App() {
-  const aboutRef = useRef(null)
-  const projectRef = useRef(null)
-  const skillsRef = useRef(null)
-  const contactRef = useRef(null)
+  const aboutRef = useRef<HTMLDivElement>(null)
+  const projectRef = useRef<HTMLDivElement>(null)
+  const skillsRef = useRef<HTMLDivElement>(null)
+  const contactRef = useRef<HTMLDivElement>(null)
   gsap.registerPlugin(ScrollToPlugin)
 
-  const scrollToSection = (ref: React.RefObject<HTMLElement>) => {
+  const scrollToSection = (ref: React.RefObject<HTMLElement | null>) => {
     gsap.to(window, {
       duration: 1.2,
       scrollTo: {

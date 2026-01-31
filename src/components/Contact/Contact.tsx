@@ -2,7 +2,7 @@ import { faEnvelope, faFile, faLocationDot, faPhone } from '@fortawesome/free-so
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { forwardRef } from 'react'
 
-const Contact = forwardRef((props, ref) => {
+const Contact = forwardRef<HTMLElement>((_, ref) => {
   return (
     <section ref={ref}>
       <div className='bg-[#6E07F3] px-4 md:px-8 lg:px-20 py-20'>
