@@ -41,7 +41,7 @@ const Banner = ({ onLetsTalk }: AboutMeProps) => {
         className='h-auto
          overflow-hidden relative text-center py-8 '
       >
-        <p className='font-Quicksand text-xl py-8'>👋Hi! I am Trí</p>
+        <p className='font-Quicksand text-xl py-8'>👋Hi! I am Tri</p>
 
         <span
           className='font-BlackOpsOne leading-none sm:text-6xl md:text-8xl 

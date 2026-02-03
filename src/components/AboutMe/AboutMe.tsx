@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import aboutmepicture from '../../assets/images/aboutme.jpg'
+import aboutmepicture from '../../assets/images/avt.jpg'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 type AboutMeProps = {
@@ -18,12 +18,15 @@ const AboutMe = forwardRef<HTMLElement, AboutMeProps>(function AboutMe(props, re
         <div className='lg:flex-row lg:flex flex flex-col gap-8 justify-between py-6'>
           <div className='flex flex-col gap-5'>
             <p className='lg:text-xl text-md font-Quicksand font-bold'>
-              Hello! I'm Sathya Narayanan, a passionate and creative UI/UX designer ready to embark on a journey of
-              shaping exceptional digital experiences.
+              Hi, I’m Tri. I am a Front-end Developer based in Ho Chi Minh City. I’m passionate about building modern,
+              visually appealing, and responsive web interfaces, and I love turning ideas into clean, interactive user
+              experiences.
             </p>
 
-            <p className='font-Quicksand text-sm md:text-md lg:text-lg lg:py-7'>
-              I have honed my skills in user research, wireframing, prototyping, and visual design.
+            <p className='font-Quicksand text-sm md:text-md lg:text-lg '>
+              My tech stack at work is mostly React.js (Vite), TypeScript, and Tailwind CSS. I’m happiest when I’m
+              learning new things, improving my skills, and refining small details that make products better. I’m always
+              excited to grow as a front-end developer and contribute to meaningful, real-world projects.
             </p>
           </div>
 

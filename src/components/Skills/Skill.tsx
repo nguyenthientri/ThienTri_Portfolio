@@ -8,8 +8,8 @@ const skillsData = [
     icon: 'technical' as const,
     sections: [
       {
-        heading: 'Programing Language & Frameworks:',
-        items: ['JavaScript [ES6], TypeScript', 'ReactJS, jQuery']
+        heading: 'Programing Language, Frameworks & Libraries',
+        items: ['JavaScript [ES6], TypeScript', 'ReactJS', 'Redux Toolkit (basic)']
       },
       {
         heading: 'Markup & Styling:',
@@ -47,7 +47,7 @@ const skillsData = [
     sections: [
       {
         heading: 'English',
-        items: ['B1.2']
+        items: ['TOEIC']
       }
     ]
   }
